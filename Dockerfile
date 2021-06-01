@@ -1,4 +1,4 @@
-FROM lambci/lambda:build-python3.7
+FROM lambci/lambda:build-python3.8
 
 ENV VIRTUAL_ENV=venv
 ENV PATH $VIRTUAL_ENV/bin:$PATH
@@ -8,7 +8,7 @@ COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-WORKDIR /var/task/venv/lib/python3.7/site-packages
+WORKDIR /var/task/venv/lib/python3.8/site-packages
 
 COPY lambda_function.py .
 COPY .lambdaignore .
