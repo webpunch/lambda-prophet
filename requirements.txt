@@ -1,2 +1,3 @@
-pystan==2.18
+cherrypy==18.6.0
+pystan==2.19.1.1
 prophet==1.0.1
